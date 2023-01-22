@@ -65,7 +65,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	margin: var(--mb-6) 0 0 0;
+	margin: var(--mb-6) 0 var(--mb-6) 0;
 	font-family: var(--body-font);
 	font-size: var(--normal-font-size);
 	color: var(--second-color);
@@ -90,7 +90,7 @@ a {
 
 @media (max-width: 767px) {
   body {
-    margin: 0;
+	margin: var(--mb-3) 0 var(--mb-3) 0;
   }
 }
 
@@ -136,7 +136,7 @@ a {
 /********** Loading **********/
 
 .loader-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -230,7 +230,6 @@ a {
   height: 250px;
   font-size: 200px;
   margin-bottom: 30px;
-  /* margin-bottom: 100px; */
 }
 
 .random-resolved {
