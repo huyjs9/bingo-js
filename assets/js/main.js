@@ -273,8 +273,8 @@
     if (initialSelectedCount === maxNumber) {
       let timerInterval;
       Swal.fire({
-        title: 'No number remain, we will reset it!',
-        html: 'I will close in <b></b> milliseconds.',
+        title: 'Hết số rồi, tui tự xóa đây!',
+        html: 'Tui tự tắt <b></b> giây.',
         icon: 'info',
         timer: 3000,
         timerProgressBar: true,
@@ -297,19 +297,20 @@
 
   const handleReload = () => {
     Swal.fire({
-      title: 'Are you sure?',
-      text: "You won't be able to revert this!",
+      title: 'Chắc chưa má?',
+      text: "Tui mà xóa là mất hết luôn ó!",
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes, reset it!',
+      confirmButtonText: 'Làm được không?',
+      cancelButtonText: 'Ò, dậy thui',
     }).then((result) => {
       if (result.isConfirmed) {
         handleReset();
         Swal.fire({
-          title: 'Reset!',
-          text: 'Your matrix has been reset.',
+          title: 'Xong!',
+          text: 'Xóa rồi đó má',
           icon: 'success',
         });
       }

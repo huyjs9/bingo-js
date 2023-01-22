@@ -14,4 +14,4 @@ For example: https://bingo-huybt.vercel.app/?max=75
 
 ### Inspired by
 
-- [partybingo](https://github.com/syumai/partybingo)
+- [partybingo](https://github.com/sifue/partybingo)
